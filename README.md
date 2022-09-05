@@ -1,9 +1,12 @@
-# burn_iso_to_cd_dvd_on_linux_terminal
-
-(works on fedora running on dell laptop running generic cheap USB cd burner by LG)
+## burn_iso_to_cd_dvd_on_linux_terminal
 
 #### Source for method: https://www.cyberciti.biz/faq/linux-burn-iso-images-to-cds-and-cd-rws-howto/
 
+# Instructions 
+To burn an iso/img to a CD or DVD disk on linux via command line terminal
+(works on fedora running on generic laptop running generic cheap USB cd burner)
+
+Run: see what you have installed. OS with either say: you have what you need, or it will tell you what standard and available packages you should install:
 ```
 $ cdrecord --version
 ```
@@ -16,16 +19,18 @@ Packages providing this file are:
 'xorriso'
 ```
 
-Run:
+Run: A clean way to check and install is run --version for a package, and let the os ask you if you want to install it. Say 'y' (yes)
 ```
 $ cdrskin --version
 ```
 Example output:
 ```
-install cdrskin
+~ Not found... do you want to install cdrskin? (y, N)
 ```
 
-Run:
+#### Say 'y' (yes)
+
+Run: Find out what the 3-number address is for your cd burner.
 ```
 $ cdrecord -scanbus
 ```
@@ -33,6 +38,8 @@ Example output:
 ```
 scsibus0: 0,0,0
 ```
+
+Put the above three numbers into the "NUMBER,NUMBER,NUMBER" part of the format below (see examples below-below), as well as your iso file path and the burn-speed (2-8?) Note: faster can be error prone) 
 
 Format:
 ```
@@ -50,4 +57,5 @@ $ cdrecord -v -dao dev=0,0,0 speed=2 /home/xxx/Downloads/5.2.1-RELEASE-i386-disc
 
 $ cdrecord -v -dao dev=0,0,0 speed=2 /home/oops/Downloads/5.2.1-RELEASE-i386-disc2.iso
 ```
+
 
