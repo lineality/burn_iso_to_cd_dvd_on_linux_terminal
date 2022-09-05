@@ -57,7 +57,7 @@ $ cdrecord -v -dao dev=0,0,0 speed=2 /home/xxx/Downloads/FreeBSD-11.2-RELEASE-i3
 
 $ cdrecord -v -dao dev=0,0,0 speed=2 /home/xxx/Downloads/5.2.1-RELEASE-i386-disc1.iso
 
-$ cdrecord -v -dao dev=0,0,0 speed=2 /home/oops/Downloads/5.2.1-RELEASE-i386-disc2.iso
+$ cdrecord -v -dao dev=0,0,0 speed=2 /home/xxx/Downloads/5.2.1-RELEASE-i386-disc2.iso
 ```
 
 
