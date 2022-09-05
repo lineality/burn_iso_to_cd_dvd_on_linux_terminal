@@ -39,7 +39,7 @@ Example output:
 scsibus0: 0,0,0
 ```
 
-Put the above three numbers into the "NUMBER,NUMBER,NUMBER" part of the format below (see examples below-below), as well as your iso file path and the burn-speed (2-8?) Note: faster can be error prone) 
+Put the above three numbers into the "NUMBER,NUMBER,NUMBER" part of the format below (see examples below-below), as well as your iso file path and the burn-speed (2-8?) Note: faster may be error prone.
 
 Run: Put your information into the following command to burn the disk.
 
